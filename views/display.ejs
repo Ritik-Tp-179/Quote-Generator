@@ -1,0 +1,48 @@
+<%- include("partial/header") %>
+
+    <div class="logout">
+        <a href="/logout" class="btn btn-dark" style="position: absolute; right:0; margin: 10px;">Log out</a>
+    </div>
+    <div>
+
+
+        <div
+            style="color: white; background-color: rgb(34, 33, 33); border: 2px solid white; width: 40%; margin: 20px auto; padding: 20px;border-radius: 7px; ">
+            <h3>
+                <%= Quote.quote %>
+            </h3>
+            <span style="width: 200px; position: relative; right: -300px;">- <%= Quote.author %> </span>
+
+        </div>
+
+        <div class="btns">
+            <center>
+                <h2>Quote category</h2>
+            </center>
+            <form action="/quote" method="post">
+                <div class="row">
+                    <button type="submit" class="btn" name="btn" value="Motivational">Motivational</button>
+                    <button type="submit" class="btn" name="btn" value="Inspirational">Inspirational</button>
+                    <button type="submit" class="btn" name="btn" value="Memorial Day">Memorial Day</button>
+                </div>
+                <div class="row">
+                    <button type="submit" class="btn" name="btn" value="Life">Life</button>
+                    <button type="submit" class="btn" name="btn" value="Love">Love</button>
+                    <button type="submit" class="btn" name="btn" value="Friendship">Friendship</button>
+                </div>
+
+                <div class="row">
+                    <button type="submit" class="btn" name="btn" value="Karma">Karma</button>
+                    <button type="submit" class="btn" name="btn" value="Birthday">Birthday</button>
+                    <button type="submit" class="btn" name="btn" value="Positive">Positive</button>
+                </div>
+            </form>
+
+        </div>
+
+
+    </div>
+    <footer>
+        <center>| Copyright 2023 | Ritik Jaiswal |</center>
+    </footer>
+    <%- include("partial/footer") %>

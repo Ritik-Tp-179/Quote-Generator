@@ -1,0 +1,30 @@
+<%- include("partial/header") %>
+
+    <div class="logout">
+        <a href="/logout" class="btn btn-dark" style="position: absolute; right:0; margin: 10px;">Log out</a>
+    </div>
+    <div>
+
+        <center>
+            <h1 style="font-size: 40px; margin:30px auto;">
+                <%= type %> Quote
+            </h1>
+        </center>
+
+        <div style="width: 55%; margin: 5px auto;font-size: 20px;margin:20px auto;">
+            <center>
+                <%= description %>
+            </center>
+        </div>
+
+        <div
+            style="color: white; background-color: rgb(34, 33, 33); border: 2px solid white; width: 40%; margin: 20px auto; padding: 20px;border-radius: 7px; ">
+            <h3>
+                <%= qquote.quote %>
+            </h3>
+            <span style="width: 200px; position: relative; right: -300px;">- <%= qquote.author %> </span>
+        </div>
+
+    </div>
+
+    <%- include("partial/footer") %>
