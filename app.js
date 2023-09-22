@@ -20,7 +20,7 @@ app.use(passport.initialize())
 app.use(passport.session())
 
 //connect the mongoDB
-mongoose.connect("mongodb://127.0.0.1:27017/quotedb", { useNewUrlParser: true })
+mongoose.connect("mongodb+srv://ritikjaiswal17904:ritikjaiswal17904@cluster0.0gvplhb.mongodb.net/Quote_generator", { useNewUrlParser: true })
 
 const quoteSchema = new mongoose.Schema({
     id: Number,
